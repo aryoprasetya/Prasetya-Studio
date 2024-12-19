@@ -371,24 +371,16 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
-    <form
-        action="https://formspree.io/f/xpwzvzza"
-        method="POST"
-        id="contactForm"
-    >
+    <form action="https://formspree.io/f/xpwzvzza" method="POST" id="contactForm">
         <div class="input-box">
-            <label>
-                Your email:
-                <input type="email" name="email" placeholder="Your Email Address" required>
-            </label>
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your Email Address" required>
         </div>
         <div class="input-box">
-            <label>
-                Your message:
-                <textarea name="message" placeholder="Your Message" required></textarea>
-            </label>
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
         </div>
-        <button type="submit" class="btn">Send</button>
+        <button type="submit" class="btn">Send Message</button>
     </form>
     <p id="successMessage" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
         Terima kasih, pesan Anda sukses dikirimkan!
